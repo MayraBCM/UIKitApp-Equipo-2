@@ -30,6 +30,10 @@
 		1CAE3B5628D37F43008E10A3 /* PrimaryTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */; };
 		C9DF52492914795300AAC618 /* characters.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF52482914795300AAC618 /* characters.swift */; };
 		C9DF524C291479BD00AAC618 /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C9DF524B291479BD00AAC618 /* Alert.swift */; };
+		EE512FD0291480DD007EB24A /* myButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE512FCC291480DD007EB24A /* myButtonStyle.swift */; };
+		EE512FD1291480DD007EB24A /* myTextFieldStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE512FCD291480DD007EB24A /* myTextFieldStyle.swift */; };
+		EE512FD2291480DD007EB24A /* myTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE512FCE291480DD007EB24A /* myTextField.swift */; };
+		EE512FD3291480DD007EB24A /* myButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE512FCF291480DD007EB24A /* myButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +81,10 @@
 		1CAE3B5528D37F43008E10A3 /* PrimaryTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryTextField.swift; sourceTree = "<group>"; };
 		C9DF52482914795300AAC618 /* characters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = characters.swift; sourceTree = "<group>"; };
 		C9DF524B291479BD00AAC618 /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		EE512FCC291480DD007EB24A /* myButtonStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myButtonStyle.swift; sourceTree = "<group>"; };
+		EE512FCD291480DD007EB24A /* myTextFieldStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTextFieldStyle.swift; sourceTree = "<group>"; };
+		EE512FCE291480DD007EB24A /* myTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myTextField.swift; sourceTree = "<group>"; };
+		EE512FCF291480DD007EB24A /* myButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = myButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +135,7 @@
 		1CAE369C28D2672C008E10A3 /* UIKitApp */ = {
 			isa = PBXGroup;
 			children = (
+				EE512FCB291480DD007EB24A /* visuales */,
 				1CAE369D28D2672C008E10A3 /* AppDelegate.swift */,
 				1CAE369F28D2672C008E10A3 /* SceneDelegate.swift */,
 				1CAE36E528D370B1008E10A3 /* Resources */,
@@ -223,6 +232,17 @@
 				C9DF524B291479BD00AAC618 /* Alert.swift */,
 			);
 			path = "Extensions ";
+			sourceTree = "<group>";
+		};
+		EE512FCB291480DD007EB24A /* visuales */ = {
+			isa = PBXGroup;
+			children = (
+				EE512FCC291480DD007EB24A /* myButtonStyle.swift */,
+				EE512FCD291480DD007EB24A /* myTextFieldStyle.swift */,
+				EE512FCE291480DD007EB24A /* myTextField.swift */,
+				EE512FCF291480DD007EB24A /* myButton.swift */,
+			);
+			path = visuales;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -364,15 +384,19 @@
 				1CAE36D128D2F5AE008E10A3 /* WelcomeView.swift in Sources */,
 				1CAE36D928D2F657008E10A3 /* SignUpViewController.swift in Sources */,
 				1CAE3B5428D37F25008E10A3 /* PrimaryButton.swift in Sources */,
+				EE512FD3291480DD007EB24A /* myButton.swift in Sources */,
 				1CAE36E328D3703A008E10A3 /* SignInStyles.swift in Sources */,
 				1CAE36E928D371BC008E10A3 /* LocalizableKeys.swift in Sources */,
 				1CAE36CF28D2F56C008E10A3 /* WelcomeViewController.swift in Sources */,
+				EE512FD2291480DD007EB24A /* myTextField.swift in Sources */,
 				1CAE369E28D2672C008E10A3 /* AppDelegate.swift in Sources */,
+				EE512FD1291480DD007EB24A /* myTextFieldStyle.swift in Sources */,
 				1CAE36D728D2F60B008E10A3 /* Constants.swift in Sources */,
 				1CAE36D428D2F5E3008E10A3 /* WelcomeViewDelegate.swift in Sources */,
 				1CAE36A028D2672C008E10A3 /* SceneDelegate.swift in Sources */,
 				C9DF524C291479BD00AAC618 /* Alert.swift in Sources */,
 				C9DF52492914795300AAC618 /* characters.swift in Sources */,
+				EE512FD0291480DD007EB24A /* myButtonStyle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -541,6 +565,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8SVS2GG425;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -569,6 +594,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 8SVS2GG425;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = UIKitApp/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

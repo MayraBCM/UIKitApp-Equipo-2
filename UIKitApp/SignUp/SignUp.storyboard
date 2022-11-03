@@ -26,29 +26,44 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="ixU-tK-pbe">
                                 <rect key="frame" x="46" y="410.5" width="322" height="172"/>
                                 <subviews>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-dA-fNZ" customClass="PrimaryTextField" customModule="UIKitApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mNd-dA-fNZ" customClass="myTextField" customModule="UIKitApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="322" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="QkP-39-Sdb"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="email"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textStyle">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElF-WV-bCE" customClass="PrimaryTextField" customModule="UIKitApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Full Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ElF-WV-bCE" customClass="myTextField" customModule="UIKitApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="64" width="322" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="4PR-Re-Mw8"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="name"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textStyle">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-K8-gdT" customClass="PrimaryTextField" customModule="UIKitApp" customModuleProvider="target">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gdE-K8-gdT" customClass="myTextField" customModule="UIKitApp" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="128" width="322" height="44"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="44" id="jFN-I7-Wqq"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" textContentType="password"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="textStyle">
+                                                <integer key="value" value="2"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
                                     </textField>
                                 </subviews>
                             </stackView>
@@ -82,7 +97,7 @@ Register Now!</string>
                                     </button>
                                 </subviews>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17G-rm-lrd" customClass="PrimaryButton" customModule="UIKitApp" customModuleProvider="target">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="17G-rm-lrd" customClass="myButton" customModule="UIKitApp" customModuleProvider="target">
                                 <rect key="frame" x="46" y="707" width="322" height="70"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="HwL-Oe-PE3"/>
@@ -90,6 +105,11 @@ Register Now!</string>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" title="Register"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="buttonStyle">
+                                        <integer key="value" value="4"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
                                 <connections>
                                     <action selector="didTapSignUp:" destination="Uev-gG-JIm" eventType="touchUpInside" id="AX7-p6-wi1"/>
                                 </connections>
@@ -116,9 +136,10 @@ Register Now!</string>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="txfEmail" destination="mNd-dA-fNZ" id="jeO-ms-5Q4"/>
-                        <outlet property="txfPassword" destination="gdE-K8-gdT" id="l2l-nk-Qf7"/>
-                        <outlet property="txfUserName" destination="ElF-WV-bCE" id="FWl-9D-18S"/>
+                        <outlet property="btnCustom" destination="17G-rm-lrd" id="SV5-qM-4lU"/>
+                        <outlet property="txfEmail" destination="mNd-dA-fNZ" id="Zdj-F5-7C4"/>
+                        <outlet property="txfPassword" destination="gdE-K8-gdT" id="xAl-nw-CaX"/>
+                        <outlet property="txfUserName" destination="ElF-WV-bCE" id="D8o-v9-Z5h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8UL-Dd-ULw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -126,20 +147,6 @@ Register Now!</string>
             <point key="canvasLocation" x="137.68115942028987" y="97.767857142857139"/>
         </scene>
     </scenes>
-    <designables>
-        <designable name="17G-rm-lrd">
-            <size key="intrinsicContentSize" width="70" height="34"/>
-        </designable>
-        <designable name="ElF-WV-bCE">
-            <size key="intrinsicContentSize" width="92.5" height="34"/>
-        </designable>
-        <designable name="gdE-K8-gdT">
-            <size key="intrinsicContentSize" width="90.5" height="34"/>
-        </designable>
-        <designable name="mNd-dA-fNZ">
-            <size key="intrinsicContentSize" width="62.5" height="34"/>
-        </designable>
-    </designables>
     <resources>
         <image name="SignUpHeader" width="881.63116455078125" height="587.6649169921875"/>
         <systemColor name="labelColor">

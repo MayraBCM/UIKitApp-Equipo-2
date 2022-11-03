@@ -9,11 +9,18 @@ import UIKit
 
 final class SignUpViewController: UIViewController {
 
-    @IBOutlet weak var txfEmail: PrimaryTextField!
-    @IBOutlet weak var txfUserName: PrimaryTextField!
-    @IBOutlet weak var txfPassword: PrimaryTextField!
+    @IBOutlet weak var txfEmail: myTextField!
+    
+    @IBOutlet weak var txfUserName: myTextField!
+    
+    @IBOutlet weak var txfPassword: myTextField!
+    
+    @IBOutlet weak var btnCustom: myButton!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        configButton()
+        configTextField()
     }
     
     func validar () -> Bool {
@@ -37,12 +44,25 @@ final class SignUpViewController: UIViewController {
                   return false }
           return true
        }
+    
+    func configButton() {
+        btnCustom.addShake()
+    }
+    
+    func configTextField() {
+        txfEmail.addShake()
+        txfPassword.addShake()
+        txfUserName.addShake()
+    }
        
     
     // MARK: - IBActions
     @IBAction func didTapSignUp(_ sender: Any) {
         if self.validar() {
-            print("exito")
+            self.basica(title: "Exito", message: "🙂")
+            txfEmail.removeShake()
+            txfPassword.removeShake()
+            txfUserName.removeShake()
         }
     }
     
